@@ -1,0 +1,122 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface-primary: #FFFFFF;
+  --color-surface-secondary: #F0F3FA;
+  --color-surface-tertiary: #E0E3EB;
+  --color-surface: #FAF9FF;
+  --color-on-surface: #181B24;
+  --color-on-surface-variant: #434656;
+  --color-secondary: #5A5E6B;
+  --color-primary: #0049DB;
+  --color-primary-container: #2962FF;
+  --color-on-primary: #FFFFFF;
+  --color-market-up: #089981;
+  --color-market-up-subtle: #E6F4F1;
+  --color-market-down: #F23645;
+  --color-market-down-subtle: #FDECEE;
+  --color-border-subtle: #E0E3EB;
+  --color-border-bold: #D1D4DC;
+  --color-brand-accent-purple: #7B1FA2;
+
+  --spacing-margin: 1rem;
+  --spacing-margin-tablet: 2rem;
+  --spacing-margin-desktop: 3.5rem;
+  --spacing-gutter-desktop: 1.5rem;
+  --spacing-space-2xs: 0.125rem;
+  --spacing-space-xs: 0.25rem;
+  --spacing-space-sm: 0.5rem;
+  --spacing-space-md: 0.75rem;
+  --spacing-space-lg: 1rem;
+  --spacing-space-xl: 1.5rem;
+  --spacing-space-2xl: 2.5rem;
+  --spacing-space-3xl: 4rem;
+}
+
+@layer utilities {
+  .font-numeric-table {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    font-weight: 500;
+    font-variant-numeric: tabular-nums;
+  }
+  .font-display-xl {
+    font-size: clamp(32px, 5vw, 56px);
+    line-height: 1.15;
+    letter-spacing: -0.03em;
+    font-weight: 800;
+  }
+  .font-headline-lg {
+    font-size: clamp(24px, 3vw, 32px);
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+    font-weight: 700;
+  }
+  .font-headline-md {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.01em;
+    font-weight: 700;
+  }
+  .font-headline-sm {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+  }
+  .font-label-lg {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+  }
+  .font-label-md {
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 500;
+  }
+  .font-label-sm {
+    font-size: 11px;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+    font-weight: 600;
+  }
+  .font-body-lg {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+  .font-body-md {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+  .font-body-sm {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+  }
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-none {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+  vertical-align: middle;
+}
